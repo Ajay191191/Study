@@ -1,0 +1,9 @@
+version: '2'
+services:
+  jupyter:
+    image: "study:latest"
+    command: "password"
+    ports:
+      - 8888:8888
+    volumes:
+      - ./code:/root/code
